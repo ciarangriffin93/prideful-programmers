@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'DEV' in os.environ
+# DEBUG = 'DEV' in os.environ
+
+DEBUG = os.environ.get('DEV') == 'True'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-vcgithubcod-pridefulpro-z7xzselbhil.ws.codeinstitute-ide.net', 'inclusive-spots-eeb5d9ac8ebf.herokuapp.com',
 '8000-vcgithubcod-pridefulpro-8r1r6tqbp3s.ws-eu115.gitpod.io', '8000-vcgithubcod-pridefulpro-dy6ggmsyu7x.ws.codeinstitute-ide.net'
