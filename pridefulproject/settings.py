@@ -32,6 +32,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # DEBUG = 'DEV' in os.environ
 
+# DEBUG = os.environ.get('DEV') == 'True'
+
 DEBUG = os.environ.get('DEV') == 'True'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-vcgithubcod-pridefulpro-z7xzselbhil.ws.codeinstitute-ide.net', 'inclusive-spots-eeb5d9ac8ebf.herokuapp.com',
